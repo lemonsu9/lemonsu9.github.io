@@ -83,21 +83,21 @@
           
             
               <li class="category-list-container">
-                <a href="javascript:;">類別</a>
+                <a href="javascript:;">Category</a>
                 
               </li>
             
           
             
               <li class="tag-list-container">
-                <a href="javascript:;">標籤</a>
-                
+                <a href="javascript:;">Tag</a>
+                <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/服务器硬件基础知识/">服务器硬件基础知识</a><span class="tag-list-count">1</span></li></ul>
               </li>
             
           
             
               <li class="archive-list-container">
-                <a href="javascript:;">彙整</a>
+                <a href="javascript:;">Archive</a>
                 <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/">2018</a><span class="archive-list-count">2</span></li></ul>
               </li>
             
@@ -160,7 +160,7 @@
     <div class="post-list-item article">
       <h3 class="article-header">
         <a href="/2018/07/06/我的第一个文章/" >
-  我的第一个文章
+  服务器硬件基础知识
 </a>
 
       </h3>
@@ -174,11 +174,50 @@
         
 
         
+	<span class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/服务器硬件基础知识/">服务器硬件基础知识</a></li></ul>
+	</span>
+
 
       </div>
       <div class="article-entry">
         
-          
+          <p>01.电脑分类说明<br>   台式机<br>   笔记本<br>   服务器</p>
+<p>   服务器作用：<br>   *运维人员工作职责<br>   1）保证数据不丢失<br>   2）保证服务24小时运行<br>   3）让用户体验更好</p>
+<p>02.服务器架构类型<br>   1）机架式<br>   2）刀片式<br>   3）塔式</p>
+<p>03.服务器品牌<br>   去IOE运动（国企）<br>   IBM    小型机服务器 大型机服务器<br>   Oracle 数据存储的仓库—数据库（成本）mysql<br>   EMC    数据存储（磁盘进行存储）（服务）</p>
+<p>04.服务器硬件组成<br>   眼睛-内存：数据临时存储位置<br>   肚子-硬盘：数据永久存储的位置<br>   心脏-电源：供电<br>   大脑–CPU：进行数据运算<br>   皮肤-风扇：提供散热 </p>
+<p>   硬件工作原理<br>   01.实现操作输入<br>   02.实现操作输出<br>   电源：UPS(不间断电源系统)</p>
+<p>   CPU路数说明（1路 2路）<br>   路数等于服务器CPU的个数</p>
+<p>   CPU核数概念（2核 4核）<br>   CPU核数就等价于酒店服务员</p>
+<p>   什么是程序（软件）？<br>   开发人员编写的代码文件[root@oldgirl opt02:54]$ echo “oldboy $OLDPWD <code>echo 123</code>“<br>    oldboy /root 123</p>
+<p>   什么是进程<br>   一个程序运行起来，成为进程<br>   进程（普通）<br>   守护进程：持续存在的进程</p>
+<p>   buffer缓冲  存缓冲 将数据存储到内存里面<br>   cache缓存   读缓存 将数据从内存中读取出来<br>   高并发： 同时并行处理很多请求</p>
+<p>   利用远程管理卡实现远程管理</p>
+<pre><code>磁盘存储换算单位
+存储到磁盘的最小单位是 byte（字节）
+1kB=1024B
+1MB=1024kB
+1GB=1024MB
+1TB=1024GB
+1PB=1024TB
+EB,ZB,YB,DB,NB
+
+磁盘的接口类型
+IDE--SCSI--SATA-SAS（茶壶壶嘴）  不同的接口类型影响着数据存储效率
+*课下查询百度，确认所有磁盘接口样子
+
+磁盘在服务器中会有多块
+100G  100G  2T
+
+1T 1T  == 逻辑捆绑成一块 == 2T  磁盘 实现这种技术磁盘阵列技术 RAID 
+实现磁盘阵列技术，必须要有RAID卡
+在安装系统之前，需要配置磁盘阵列 RAID 0 1 5 6 10 01
+
+服务器硬件性能对比
+CPU&gt;内存&gt;SSD 固态盘&gt;普通硬盘
+</code></pre><p>作业<br>01.预习Linux系统知识<br>02.进行总结今天知识点（画图）</p>
+
         
       </div>
     </div>
